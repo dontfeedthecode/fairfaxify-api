@@ -13,19 +13,19 @@ Installation is simple and only requires modification of two base paths and data
 
 *.htaccess*
 
-`Line 5: Change RewriteBase (if required) e.g. RewriteBase /fairfaxify/`
+`Line 5:` Change RewriteBase (if required) e.g. RewriteBase /fairfaxify/
 
 *application/bootstrap.php*
 
-`Line 83: Change base_url (if required) e.g. 'base_url'   => '/fairfaxify/'`
+`Line 83:` Change base_url (if required) e.g. 'base_url'   => '/fairfaxify/'
 
 ###### MySQL
 
 Import fairfaxify.sql into the target database.
 
-*application/config./database.php*
+*application/config/database.php*
 
-`Line 21: Change hostname e.g. 'hostname'   => 'yourhost',`
-`Line 22: Change database name e.g. 'database'   => 'user_database',`
-`Line 23: Change user name e.g. 'username'   => 'root',`
-`Line 24: Change password e.g. 'password'   => 'abc123',`
+`Line 21:` Change hostname e.g. 'hostname'   => 'yourhost',
+`Line 22:` Change database name e.g. 'database'   => 'user_database',
+`Line 23:` Change user name e.g. 'username'   => 'root',
+`Line 24:` Change password e.g. 'password'   => 'abc123',
