@@ -19,9 +19,9 @@ return array
 			 * Ports and sockets may be appended to the hostname.
 			 */
 			'hostname'   => 'localhost',
-			'database'   => 'limeligh_fairfaxify',
-			'username'   => 'limeligh_dbuser',
-			'password'   => '!limel1m34610@',
+			'database'   => '',
+			'username'   => '',
+			'password'   => '',
 			'persistent' => FALSE,
 		),
 		'table_prefix' => '',
