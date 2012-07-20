@@ -83,7 +83,8 @@ class Controller_Rest extends Controller
     public function action_articles()
     {
         try {
-			// Load all articles via ORM
+			// Load articles via query builder, auto-escaping and MySQL
+			// injection prevention
             $articles = DB::select('id', 'header', 'description', 'thumbnailHref')
                 ->from('articles')
                 ->execute()
@@ -111,7 +112,8 @@ class Controller_Rest extends Controller
         	// Check if ID param has been passed, either load
         	// single result or pass back error
         	if($this->_id) {
-				// Load all articles via ORM
+				// Load article via query builder, auto-escaping and MySQL
+				// injection prevention
 	            $article = DB::select('id', 'header', 'description', 'heroImage', 'body')
 	                ->from('articles')
 					->where('id', '=', $this->_id)
