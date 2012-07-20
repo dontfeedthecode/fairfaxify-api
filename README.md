@@ -7,8 +7,11 @@ This is a simple API built in Kohana by Tim Sheehan to serve JSONP data to Fairf
 
 #### Installation
 
-Installation is simple and only requires modification of two base paths and database configuration.
+Installation is simple and only requires modification of two base paths and database configuration. Once installed both API methods can be called from the following url's:
 
+ - `yourhost.com/[base_url]/rest/articles`
+ - `yourhost.com/[base_url]/rest/article/[article_id]`
+ 
 ###### Paths
 
 *.htaccess*
@@ -29,3 +32,7 @@ Import fairfaxify.sql into the target database.
  - `Line 22:` Change database name e.g. 'database'   => 'user_database',
  - `Line 23:` Change user name e.g. 'username'   => 'root',
  - `Line 24:` Change password e.g. 'password'   => 'abc123',
+ 
+###### Security
+
+If used in a production environment it is recommended that the application, modules and system folder be moved below web root and their respective paths changed in index.php.
